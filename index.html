@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WayMate - Óculos Inteligentes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">WayMate</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#funcionamento">Funcionamento</a>
+            <a href="#componentes">Componentes</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <div class="texto-inicio">
+            <h1>Mais autonomia para seguir em frente.</h1>
+
+            <p>
+                O WayMate é um projeto de óculos inteligentes desenvolvido
+                para ajudar pessoas com deficiência visual a identificar
+                obstáculos durante seus deslocamentos.
+            </p>
+
+            <a href="#sobre" class="botao">Conheça o projeto</a>
+        </div>
+
+        <div class="oculos">
+            <div class="lente">
+                <div class="reflexo"></div>
+            </div>
+
+            <div class="ponte"></div>
+
+            <div class="lente">
+                <div class="reflexo"></div>
+            </div>
+
+            <div class="haste haste-esquerda"></div>
+            <div class="haste haste-direita"></div>
+        </div>
+    </section>
+
+    <section id="sobre" class="secao">
+        <h2>Sobre o WayMate</h2>
+
+        <p>
+            A locomoção pode ser um desafio para pessoas com deficiência
+            visual, principalmente em locais com obstáculos inesperados.
+            Pensando nisso, o WayMate busca oferecer uma alternativa
+            tecnológica que ajude a tornar os deslocamentos mais seguros.
+        </p>
+
+        <p>
+            O projeto utiliza sensores para identificar objetos próximos
+            e emitir alertas que ajudam o usuário a perceber a presença
+            de possíveis obstáculos.
+        </p>
+    </section>
+
+    <section id="funcionamento" class="secao funcionamento">
+        <h2>Como funciona?</h2>
+
+        <div class="cartoes">
+            <div class="cartao">
+                <h3>01. Detecção</h3>
+                <p>
+                    O sensor identifica obstáculos que estejam próximos
+                    dos óculos.
+                </p>
+            </div>
+
+            <div class="cartao">
+                <h3>02. Processamento</h3>
+                <p>
+                    O sistema recebe as informações do sensor e verifica
+                    a distância do objeto.
+                </p>
+            </div>
+
+            <div class="cartao">
+                <h3>03. Alerta</h3>
+                <p>
+                    O usuário recebe um aviso sonoro ou uma vibração,
+                    dependendo do modo escolhido.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao modos">
+        <h2>Escolha o modo de alerta</h2>
+
+        <p>
+            Selecione uma opção para conhecer os modos de funcionamento
+            propostos para o projeto.
+        </p>
+
+        <div class="botoes-modo">
+            <button onclick="escolherModo('silencioso')">
+                Silencioso
+            </button>
+
+            <button onclick="escolherModo('sonoro')">
+                Sonoro
+            </button>
+
+            <button onclick="escolherModo('completo')">
+                Vibração + Som
+            </button>
+        </div>
+
+        <div class="resultado" id="resultado">
+            Escolha um modo para ver sua descrição.
+        </div>
+
+        <h3>Simulação de distância</h3>
+
+        <p id="distancia">
+            Distância do obstáculo: aguardando simulação.
+        </p>
+
+        <button class="botao" onclick="simularDistancia()">
+            Simular sensor
+        </button>
+    </section>
+
+    <section id="componentes" class="secao">
+        <h2>Componentes do projeto</h2>
+
+        <p>
+            Estes são alguns dos componentes que podem ser utilizados
+            na montagem do protótipo físico.
+        </p>
+
+        <div class="tabela">
+            <div class="linha cabecalho">
+                <span>Componente</span>
+                <span>Função</span>
+            </div>
+
+            <div class="linha">
+                <span>Arduino</span>
+                <span>Controlar o funcionamento do sistema.</span>
+            </div>
+
+            <div class="linha">
+                <span>Sensor ultrassônico</span>
+                <span>Medir a distância dos obstáculos.</span>
+            </div>
+
+            <div class="linha">
+                <span>Buzzer</span>
+                <span>Emitir alertas sonoros.</span>
+            </div>
+
+            <div class="linha">
+                <span>Motor vibratório</span>
+                <span>Produzir alertas por vibração.</span>
+            </div>
+
+            <div class="linha">
+                <span>Bateria</span>
+                <span>Fornecer energia ao circuito.</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>WayMate © 2026</p>
+        <p>Tecnologia e acessibilidade caminhando juntas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

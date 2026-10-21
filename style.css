@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8ff;
+    color: #292039;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #ddd5eb;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #7851a9;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #393044;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #9567d8;
+}
+
+.inicio {
+    min-height: 500px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(135deg, #eee5ff, #faf8ff);
+}
+
+.texto-inicio {
+    max-width: 550px;
+}
+
+.texto-inicio h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #553582;
+}
+
+.texto-inicio p {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #7851a9;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #5d3c87;
+}
+
+/* Desenho dos óculos */
+
+.oculos {
+    position: relative;
+    width: 340px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.lente {
+    width: 125px;
+    height: 90px;
+    background: linear-gradient(145deg, #393342, #100e16);
+    border: 5px solid #201c29;
+    border-radius: 15px 15px 32px 32px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 15px #b9a7d1;
+}
+
+.reflexo {
+    position: absolute;
+    width: 35px;
+    height: 100px;
+    background-color: #a88bda;
+    opacity: 0.4;
+    transform: rotate(35deg);
+    left: 25px;
+    top: -20px;
+}
+
+.ponte {
+    width: 25px;
+    height: 12px;
+    border-top: 5px solid #201c29;
+    margin-top: -20px;
+}
+
+.haste {
+    position: absolute;
+    width: 45px;
+    height: 9px;
+    background-color: #201c29;
+    top: 37px;
+    border-radius: 5px;
+}
+
+.haste-esquerda {
+    left: -12px;
+    transform: rotate(-12deg);
+}
+
+.haste-direita {
+    right: -12px;
+    transform: rotate(12deg);
+}
+
+/* Seções */
+
+.secao {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.secao h2 {
+    font-size: 30px;
+    color: #69429a;
+    margin-bottom: 20px;
+}
+
+.secao > p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.funcionamento {
+    background-color: #f0e9fb;
+}
+
+.cartoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    max-width: 330px;
+    box-shadow: 0 4px 12px #ded3ed;
+}
+
+.cartao h3 {
+    color: #7851a9;
+    margin-bottom: 12px;
+}
+
+/* Modos de alerta */
+
+.modos {
+    background-color: #ffffff;
+}
+
+.botoes-modo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.botoes-modo button {
+    background-color: #e7dcf8;
+    color: #553582;
+    border: 1px solid #cbb6ed;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.botoes-modo button:hover {
+    background-color: #7851a9;
+    color: white;
+}
+
+.resultado {
+    max-width: 600px;
+    margin: 20px auto 35px;
+    padding: 20px;
+    background-color: #f4effb;
+    border-radius: 10px;
+}
+
+#distancia {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Tabela de componentes */
+
+.tabela {
+    max-width: 850px;
+    margin: 30px auto 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #e4dced;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    border-bottom: 1px solid #eee6f7;
+}
+
+.linha span {
+    padding: 15px;
+}
+
+.cabecalho {
+    background-color: #7851a9;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #342343;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .texto-inicio h1 {
+        font-size: 32px;
+    }
+
+    .oculos {
+        transform: scale(0.85);
+        margin: 0 auto;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartao {
+        width: 100%;
+    }
+
+    .secao {
+        padding: 50px 6%;
+    }
+
+    .linha {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .linha span {
+        padding: 10px;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
